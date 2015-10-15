@@ -1,0 +1,7 @@
+{
+  "name": "NameItem",
+  "props":{
+    "name": "Fredrik",
+    "age": "29"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "progress",
+  "props":{
+    "progress": 25
+  }
+}
