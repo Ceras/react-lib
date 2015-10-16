@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDom = require('react-dom');
+require('./index.css');
 //
 var componentList = [
     "./components/testComp1/",
@@ -8,7 +9,7 @@ var componentList = [
 
 
 var treeStyle = {verticalAlign: 'top', backgroundColor: '#dddddd', height: '100%', width: '20%', display: 'inline-block'};
-var viewerStyle = {verticalAlign: 'top', height: '100%', backgroundColor: '#eeeeee', width: '80%', display: 'inline-block'};
+var viewerStyle = {verticalAlign: 'top', height: '100%', backgroundColor: '#999999', width: '80%', display: 'inline-block'};
 
 var App = React.createClass({
 
@@ -80,8 +81,10 @@ var ComponentViewer = React.createClass({
         if(this.state !== null){
             return(
                 <div style={this.props.style}>
-                    <div style={{height: "60%"}}>
-                        <this.state.component key={this.state.conf.name} {...this.state.conf.props}></this.state.component>
+                    <div className={"block"}>
+                        <div className={"centered"}>
+                            <this.state.component key={this.state.conf.name} {...this.state.conf.props}></this.state.component>
+                        </div>
                     </div>
                     <ComponentEditor style={{height: "40%", borderTop: '1px solid'}} {...this.state.conf} onPropsChange={this.onPropsChange}/>
                 </div>

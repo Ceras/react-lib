@@ -1,0 +1,20 @@
+.block {
+    height: 60%;
+    text-align: center;
+    background: #c0c0c0;
+}
+
+.block:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.centered {
+    display: inline-block;
+    vertical-align: middle;
+    border: #a0a0a0 solid 1px;
+    background: #f5f5f5;
+}
